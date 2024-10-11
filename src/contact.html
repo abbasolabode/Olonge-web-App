@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <title>Login</title>
+    </head>
+
+    <body class="w-[25.875rem]"><!-- rounded-[1.875rem] -->
+        <!-- Top container -->
+        <section class="w-[25.875rem]">
+            <section class="w-[25.875rem] h-[23.875rem] rounded-[1.875rem] shadow-2xl">
+                <!-- Logo container --> 
+                <div class="w-[9.375rem] h-[10.14rem] mt-[7rem]  ">
+                    <img src="./bella Olonje images/Group 3.png" alt="logo"
+                        class="w-[8.22rem] h-[15.175rem] ml-[8.5rem] mt-[10rem] pt-[5rem]">
+                </div>
+
+                <!-- Buttons container -->
+                <div class="text-cente flex justify-center items-center relative top-[10.5rem] gap-[8rem]">
+                    <!-- Button 1 -->
+                    <span class="w-[6rem] h-[1.32rem] ml-[5.56rem] ">
+                        <button class="hover:underline hover:decoration-orangeColor  underline-offset-[2rem]" id=""><span
+                                class="font-semibold text-[1.125rem] leading-[1.3425rem] font-poppins">Login</span></button>
+                    </span>
+
+                    <!-- Button2 -->
+                    <span class="w-[6.4375rem] h-[1.3125rem] relative right-[4.5rem]">
+                        <a href="signup.html" target="_blank"><button
+                                class="font-poppins hover:underline hover:decoration-orangeColor underline-offset-[2rem] w-full " id="sign-up-btn"><span
+                                    class="font-semibold font-poppins text-[1.125rem] leading-[1.3425rem]">Sign-up</span></button></a>
+                    </span>
+                </div>
+            </section>
+
+
+            <form action="" method="post" id="form" class="">
+                <section class="w-[19.625rem] h-[3.6875rem] ml-[3.125rem] flex flex-col relative">
+                    <label for="email" class="w-[10.4375rem] h-[1.125rem] mr-[2rem] mt-[5rem] font-poppins"><span class="opacity-40 font-semibold">Email address</span></label>
+                    <input type="email" name="email" id="email" placeholder="" class="outline-none w-[14.5rem] h-[1.25rem] placeholder:font-semibold placeholder:text-black placeholder:bg-none  mt-[1rem] ">
+                    <ion-icon name="alert-circle" class="text-red-500 absolute right-0 top-[8rem]  opacity-0 error-icon"></ion-icon><!-- Error icon -->
+                    <ion-icon name="checkmark-circle" class="text-green-600  absolute right-0 top-[8rem]  opacity-0 success-icon"></ion-icon><!-- Error icon -->
+                    <hr class="mt-[1rem] border-[0.003rem]" id="hr">
+                    <p class="ml-[0.3rem] text-red-600  opacity-0 error-message">incorrect email</p>
+                </section>
+
+                <section class="w-[19.625rem] h-[3.6875rem] flex flex-col mt-[4rem] relative">
+                    <label for="password" class="mt-[5rem] ml-[3.125rem] "><span class="w-[4.5rem] h-[1.125rem] opacity-40 font-semibold text-[0.9375rem] leading-[1.11875rem] font-poppins">Password</span></label>
+                    <input type="password"   name="password" id="password" placeholder="" class="outline-none ml-[4rem] placeholder:ml-[3.125rem] placeholder:w-[6rem] placeholder:h-[1.25rem] placeholder:font-semibold placeholder:leading-[1.2rem]">
+                    <ion-icon name="alert-circle" class="text-red-500 absolute  left-[21.5rem] top-[7rem]  opacity-0  error-icon"></ion-icon>
+                    <ion-icon name="checkmark-circle" class="text-green-600  absolute left-[21.5rem] top-[7rem]  opacity-0  success-icon"></ion-icon>
+                    <hr class="w-[19.625rem] ml-[3.125rem] border-[0.003rem]">
+                    <p class="ml-[3rem] text-red-600  opacity-0 error-message">incorrect password</p>
+                </section>
+               
+
+                <!-- Forgot passcode? -->
+                <section class="w-[9.3rem] h-[1.25rem] mt-[6.125rem] font-semibold ml-[3.125rem] hover:bg-white">
+                    <button type="reset" class="hover:bg-white "><span class="text-orangeColor font-poppins">Forgot passcode?</span></button>
+                </section>
+
+                <button type="click" class="w-[19.625rem] h-[4.375rem] ml-[3.125rem] rounded-full bg-orangeColor mt-[10rem]"><span class="2.875rem h-[1.25rem] font-poppins text-white" id="submit-btn">Login</span></button>
+            </form>
+            
+        </section>
+            <!-- End of the Login section -->
+
+        <script src="./contact.js"></script>
+    </body>
+
+</html>

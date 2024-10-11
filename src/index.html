@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <title>Olonje Web App</title>
+    </head>
+
+    <body  class="overflow-x-hidden">
+        <!--Start of the header -->
+        <header class="w-[25.875rem] h-[7rem] laptop:w-[90rem] laptop:h-[9.75rem]">
+            <section class="laptop:flex laptop:items-center">
+                <div class="w-[23.875rem] h-[4.875rem] flex justify-between">
+                    <!-- Logo -->
+                    <div
+                        class="w-[6.5rem] h-[3.21rem] ml-[0.5625rem] gap-[1.5rem] laptop:w-[15.375rem] laptop:h-[6.3125rem] mt-[1.6325rem] laptop:ml-[4.375rem] pr-[1.25rem] pl-[1.25rem]">
+                        <img src="./bella Olonje images/Bella Olonje logo 111 1.png" alt=""
+                            class="w-[6.5rem] h-[3.21rem] laptop:w-[12.875rem] laptop:h-[6.3125rem]">
+                    </div>
+
+                    <!-- Hamburger Menu -->
+                    <div class="w-[2.5rem] h-[2rem]  mt-[2.6rem] mr-[2rem]">
+                        <ion-icon name="menu"
+                            class="w-[2rem] h-[1.5rem] text-gray-400 opacity-[3.75rem] mt-[0.5rem] ml-[1.5625rem] laptop:hidden"
+                            id="hamburger"></ion-icon>
+                    </div>
+                </div>
+
+                <!-- Navigation bars -->
+                <nav class="hidden flex fixed top-0 right-0 justify-center items-center  bg-white w-[25.875rem] min-h-full  transition-all duration-1000 laptop:flex laptop:items-center laptop:justify-end laptop:w-[90rem] laptop:mr-[1.7rem] laptop:mt-[5rem] laptop:relative laptop:top-0"
+                    id="menu">
+                    <!-- close button -->
+                    <div class="self-start">
+                        <ion-icon name="close-outline"
+                            class="w-[2.5rem] h-[2rem] text-gray-400 relative top-3 right-[6rem] rounded-sm laptop:hidden"
+                            id="close-btn"></ion-icon>
+                    </div>
+                    <ul
+                        class="flex flex-col justify-center items-center  laptop:flex laptop:flex-row laptop:justify-end laptop:items-center laptop:w-[36.25rem] laptop:h-[3rem] laptop:gap-[5.875rem] laptop:ml-[]">
+                        <li
+                            class="w-[4.4375rem] h-[3rem] p-[0.625rem] gap-2.5 laptop:w-[4.4375rem] laptop:h-[3rem] laptop:p-[0.625rem] laptop:gap-[0.625rem]">
+                            <a href="index.html"
+                                class="font-semibold text-base leading-7 text-primaryColor font-montserrat laptop:w-[3.1875rem] laptop:h-[1.75rem] laptop:font-montserrat laptop:font-semibold laptop:text-base laptop:leading-[1.75rem] laptop:tracking-[0.0125rem]  laptop:hover:underline laptop:hover:bg-orangeColor">Home</a>
+                        </li>
+                        <li
+                            class="w-[5.5rem] h-[3rem] p-[0.625rem] gap-2.5 laptop:w-[5.5rem] laptop:h-[3rem] laptop:p-[0.625rem] laptop:gap-[0.625rem]">
+                            <a href="product.html" target="_blank"
+                                class="w-[4.25rem] h-[1.75rem] font-semibold text-primaryColor font-montserrat laptop:w-[4.25rem] laptop:h-[1.75rem] laptop:font-montserrat laptop:font-semibold laptop:leading-[1.75rem] laptop:tracking-[0.0125rem]  laptop:hover:underline laptop:hover:bg-orangeColor">Product</a>
+                        </li>
+                        <li
+                            class="w-[3.25rem] h-[3rem]  gap-2.5  p-[0.625rem] laptop:w-[3.25rem] laptop:h-[3rem] laptop:p-[0.625rem] laptop:gap-[0.625rem]">
+                            <a href="faq.html" target="_blank"
+                                class="w-[2rem] h-[1.75rem] text-primaryColor font-montserrat font-semibold laptop:w-[2rem] laptop:h-[1.75rem] laptop:font-montserrat laptop:text-base laptop:leading-[1.75rem] laptop:tracking-[0.0125rem]  laptop:hover:underline laptop:hover:bg-orangeColor">Faq</a>
+                        </li>
+                        <li
+                            class="w-[5.4375rem] h-[3rem] gap-2.5  p-[0.625rem] laptop:w-[5.4375rem] laptop:h-[3rem] laptop:p-[0.625rem] laptop:gap-[0.625rem]">
+                            <a href="contact.html" target="_blan"
+                                class="w-[4.18rem] h-[1.75rem] leading-7 font-base text-primaryColor font-montserrat font-semibold hover:underline hover:underline-oranage laptop:hover:underline laptop:hover:bg-orangeColor">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <!--End of Header -->
+
+
+        <!-- Hero section -->
+        <section
+            class="w-[25.875rem] h-[17.625rem] mt-[3.125rem] pl-[0.09375rem] laptop:w-[90rem] laptop:h-[38.6875rem]">
+
+            <!-- Upper container -->
+            <div class="w-[25.875rem] h-[20.625rem] text-center laptop:relative">
+                <!-- bg Img -->
+                <div class="laptop:w-[90rem]">
+                    <img src="./bella Olonje images/Hero-Bella.png" alt="Hero image"
+                        class="hidden laptop:block laptop:w-full laptop:bg-contain">
+                </div>
+
+                <h5
+                    class="w-[6rem] h-[1.5rem] font-montserrat font-bold font-base leading-6 text-lightGray mx-auto laptop:absolute laptop:bottom-[13rem] laptop:w-[8.4rem] laptop:h-[2.25rem] laptop:ml-[40.6875rem] laptop:mb-[2rem] laptop:font-montserrat laptop:font-bold laptop:text-[1.5rem] laptop:leading-9 laptop:tracking-[0.00625rem] laptop:text-white laptop:text-center ">
+                    Food App
+                </h5>
+                <div
+                    class="w-[25.6875rem] h-[17.625rem] mt-[3.125rem] laptop:absolute laptop:bottom-[2rem] laptop:top-[5rem] laptop:w-[62rem] laptop:h-[20.375rem] laptop:mt-[4.5rem] laptop:ml-[13.5625rem]">
+
+                    <!-- Largest text-->
+                    <div
+                        class="w-[25.6875rem] h-[9.25rem] p-[0.625rem] gap-[0.625rem] laptop:w-[62.8125rem] laptop:h-[30rem]">
+                        <h1
+                            class="w-[24.4375rem] h-[8rem] font-montserrat font-bold text-[2.25rem] leading-[2.656rem] text-primaryColor laptop:w-[55.5625rem] laptop:h-[10rem] laptop:ml-[2.125rem] laptop:font-poppins laptop:text-[3.625rem] laptop:tracking-[0.0125rem] laptop:leading-[5rem]  laptop:font-bold laptop:text-white">
+                            Why stay hungry when
+                            you can order form Bella Onojie
+                        </h1>
+                    </div>
+
+
+                    <div
+                        class="w-[22.625rem] h-[6rem] p-[0.625rem] gap-[0.625rem] laptop:relative laptop:bottom-[20rem] laptop:left-[10rem] laptop:w-[45.5rem] laptop:h-[6rem] ">
+                        <h4
+                            class="font-montserrat font-medium text-2xl w-[21.375rem] h-[4.75rem] ml-[1rem] leading-[2.375rem] tracking-[0.0125rem] text-lightGray laptop:w-[34.4375rem] laptop:h-[2.375rem] laptop:font-montserrat laptop:font-medium laptop:text-2xl laptop:leading-[2.375rem] laptop:tracking-[0.0125rem] laptop:text-white laptop:ml-14">
+                            Download the bella onoje’s food app now on
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Buttons Container-->
+            <span
+                class="flex flex-col mx-auto laptop:relative laptop:top-[7rem] laptop:left-[20rem] laptop:inline laptop:w-[14rem] laptop:h-[4.25rem]">
+                <button type="button"
+                    class=" w-[14.75rem] h-[4.25rem] rounded-full ml-[5.5rem] hover:bg-white bg-orangeColor shadow-2xl laptop:w-[14.75rem] laptop:h-[4.25rem] laptop:relative laptop:bottom-[3.2rem] laptop:left-[6rem] laptop:hover:bg-white laptop:whitespace-nowrap"><span
+                        class="hover:text-orangeColor text-white font-montserrat font-bold leading-8 text-2xl laptop:font-montserrat laptop:bold laptop:text-2xl laptop:leading-9 laptop:tracking-[0.00625rem] laptop:font-bold ">Playstore</span></button>
+                <button type="button"
+                    class=" w-[14.75rem] h-[4.25rem] rounded-full ml-[5.5rem]  border mt-[1rem] shadow-2xl laptop:pt-[1rem] laptop:pb-[1rem] laptop:relative laptop:bottom-[3.2rem] laptop:left-[3rem] laptop:hover:bg-orangeColor"><span
+                        class="font-bold font-montserrat text-2xl leading-8 text-orangeColor hover:text-white laptop:w-[7.6875rem] laptop:h-[2.25rem] laptop:font-montserrat laptop:font-bold laptop:text-2xl laptop:leading-9 laptop:tracking-[0.00625rem] laptop:text-white">App
+                        store
+                    </span>
+                </button>
+            </span>
+
+        </section>
+        <!-- End of Hero section -->
+
+        <!-- Hero phones image -->
+        <section class="laptop:w-[40rem] laptop:h-[40rem] laptop:ml-[27.875rem]">
+            <div
+                class="flex justify-5center items-center w-[26.375rem] h-[30.75rem] ml-[-1rem] mt-[15rem] laptop:mt-0 laptop:relative laptop:top-[-9rem] laptop:ml-[3rem]">
+                <img src="./bella Olonje images/Group 54.png" alt="" class="laptop:w-[40rem]">
+            </div>
+        </section>
+
+
+
+
+        <section class="laptop:h-0 laptop:mt-[-15rem]">
+            <div class="flex flex-col-reverse mt-[5rem] laptop:flex-col">
+                <hr
+                    class="border-[0.1875rem] w-full mt-[2.5rem] laptop:w-[55.25rem] laptop:mx-auto laptop:mt-0 text-horizontalRule ">
+                <h3
+                    class="15.125rem font-semibold text-2xl leading-8 font-montserrat text-center laptop:w-[28.5625rem] laptop:h-[2.25rem] laptop:opacity-40 laptop:mx-auto laptop:font-poppins laptop:font-semibold  laptop:text-[2.75rem] laptop:leading-9 laptop:tracking-[0.00625rem] laptop:mt-[2rem]">
+                    How the app works
+                </h3>
+            </div>
+        </section>
+
+
+        <!-- Login section-->
+        <main class="">
+            <section
+                class="flex flex-col-reverse items-center laptop:w-[90rem] laptop:h-[50.4rem] laptop-grid laptop:grid-cols-2 laptop:items-center laptop:mt-[4rem]">
+                <!-- Left container -->
+                <div class="w-full mx-auto laptop:ml-[6rem] h-[36.3rem]">
+                    <img src="./bella Olonje images/Rectangle 1.png" alt=""
+                        class="ml-[2rem] laptop:w-[35rem] laptop:h-[50rem] h-full mt-[15rem] laptop:relative laptop:top-[-26rem] laptop:left-5">
+                </div>
+
+
+                <!--Right Container-->
+                <div
+                    class="w-[35.5.3125rem] h-[17.5rem] gap-[1.875rem] text-center  laptop:w-[35.5rem] laptop:h-0 laptop:gap-[4.375rem] laptop:mt-[-40rem]  laptop:ml-[35rem] laptop:">
+                    <div class="w-[14.5rem] h-[2.25rem] mx-auto">
+                        <h3
+                            class="font-montserrat font-bold text-2xl leading-8 text-orangeColor mt-[3rem] laptop:text-left laptop:w-[14.5rem] laptop:h-[2.25rem] laptop:font-bold laptop:text-2xl laptop:leading-9 laptop:tracking-[0.00625rem] laptop:font-montserrat laptop:ml-[-10rem] laptop:relative laptop:top-8">
+                            Create an
+                            account</h3>
+                    </div>
+
+                    <div
+                        class="w-[22.3rem] h-[15.5rem] p-[0.625rem] gap-[0.625rem] laptop:w-[35rem] laptop:h-[8.375rem] laptop:pt-[0.625rem] laptop:pr-0 laptop:pb-[0.625rem] laptop:pl-0 laptop:gap-[0.625rem]">
+                        <h2
+                            class="font-montserrat font-bold text-[2.5rem] leading-[3.5625rem] w-[21rem] h-[14.25rem] text-primaryColor mt-[2rem] laptop:w-[37rem] laptop:h-[7.125rem] laptop:font-montserrat laptop:font-bold laptop:text-[2.5rem] laptop:leading-[3.5625rem] laptop:tracking-[0.0125rem] laptop:text-primaryColor laptop:text-left laptop:mb-[3rem]">
+                            Create/login to an existing
+                            account to get started</h2>
+                    </div>
+
+                    <div
+                        class="w-[17.3rem] h-[10.75rem] p-[0.625rem] gap-[0.625rem] mx-auto laptop:w-[29.1rem] laptop:h-[6rem]">
+                        <h4
+                            class="text-2xl leading-8 tracking-[0.0125rem] font-medium w-[14rem] h-[9.5rem] text-lightGray mt-[5rem] laptop:pt-2.5 laptop:pr-0 laptop:pb-2.5 laptop:pl-0 laptop:gap-[0.625rem] laptop:w-[29.1875rem] laptop:h-[6rem] laptop:text-left laptop:text-2xl laptop:font-montserrat laptop:font-medium laptop:leading-[2.375rem] laptop:tracking-[0.0125rem] laptop:relative laptop:bottom-12 laptop:right-10 ">
+                            An account is created with your email and a desired password</h4>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Login section -->
+
+
+            <section
+                class="w-[25.875rem] h-[58.1875rem] laptop:w-[90rem] laptop:h-[50.4rem] laptop:flex laptop:justify-around laptop:text-right mt-[14rem]">
+                <!-- Left container -->
+                <div
+                    class="w-[23.6rem] h-[28.6rem] pl-[2rem] gap-[1.875rem] laptop:w-[35.5rem] laptop:h-[17.5rem] laptop:gap-[4.375rem] laptop:mt-[5.5rem]">
+                    <div class="w-[23.6rem] h-[2.25rem] laptop:w-[25.5rem] laptop:h-[2.25rem]">
+                        <h3
+                            class="hidden  laptop:flex  laptop:font-montserrat laptop:font-bold laptop:text-2xl laptop:leading-9 laptop:tracking-[0.00625rem] text-orangeColor laptop:ml-[8.5rem]">
+                            Explore varieties</h3>
+                        <h3
+                            class="w-full h-full font-montserrat font-bold text-2xl relative right-[1.8rem] leading-8 tracking-widest text-center overflow-hidden text-orangeColor laptop:hidden">
+                            Explore while shopping</h3>
+                    </div>
+
+                    <div
+                        class="w-[21.6rem] h-[11.9rem] p-[0.625rem] gap-[0.625rem] text-center laptop:w-[30rem] laptop:h-[8.375rem] laptop:pt-[0.625rem] laptop:pb-[0.625rem] laptop:gap-[0.625rem]">
+                        <h2
+                            class="w-[20.4rem] h-[10.6rem] font-montserrat font-bold text-[2.5rem] leading-[3.5rem] text-primaryColor tracking-[0.0.125rem] laptop:w-[30rem] laptop:h-full laptop:text-left laptop:font-montserrat laptop:font-bold laptop:text-[2.5rem] laptop:leading-[3.5625rem] laptop:tracking-[0.0125rem] laptop:ml-[8rem]">
+                            Shop for your favorites
+                            meal as e dey hot.
+                        </h2>
+                    </div>
+
+                    <div class="w-[17.3rem] h-[10.75rem] gap-[0.625rem] p-[0.625rem] mx-auto">
+                        <h4
+                            class="w-[16rem] h-[9.5rem] font-montserrat font-medium text-2xl text-lightGray tracking-[0.0125rem] text-center leading-[2.375rem] ml-[1rem] mt-[2rem] laptop:w-[28.875rem] laptop:h-[6rem] laptop:pt-[0.625rem] laptop:pb-[0.625rem] laptop:gap-[0.625rem] laptop:text-left">
+                            Shop for your favorite meals or drinks
+                            and enjoy while doing it.
+                        </h4>
+                    </div>
+                </div>
+
+                <!-- Image container -->
+                <div
+                    class="w-[25.875rem] h-[36.3rem] laptop:w-[32.8rem] laptop:h-[53rem] laptop:relative laptop:bottom-[5rem]">
+                    <img src="./bella Olonje images/Rectangle (4).png" alt=""
+                        class=" h-[38.3125rem] ml-[1.5rem] mt-[-5rem] w-full laptop:w-full laptop:h-full">
+                </div>
+            </section>
+
+
+
+            <section
+                class="w-[25.875rem] h-[44.43rem] pt-[6.25rem] pr-[1.25rem] pb-[6.25rem] pl-[1.25rem] gap-[3.75rem] laptop:w-[90rem] laptop:h-[50.43rem laptop:w-[35.5rem] laptop:h-[17.5rem] laptop:mt-[5.1875rem] laptop:flex laptop:flex-row-reverse laptop:justify-between">
+                <!-- Left container -->
+                <div class="w-[21rem] h-[31.9375rem] gap-[1.875rem] laptop:mr-[25rem]">
+                    <div
+                        class="w-[7.6875rem] h-[2.25rem] mx-auto laptop:w-[7.6875rem] laptop:h-[2.25rem] laptop:font-montserrat ">
+                        <h3
+                            class="font-montserrat font-bold text-2xl leading-9 tracking-[0.00625rem] text-orangeColor laptop:font-bold laptop:text-2xl laptop:leading-[2.25rem] laptop:tracking-[0.00625rem] laptop:relative laptop:right-[5.4rem]">
+                            Checkout</h3>
+                    </div>
+
+                    <div
+                        class="w-[21rem] h-[15.1875rem] p-[0.625rem] gap-[0.625rem] laptop:w-[34.9375rem] laptop:h-[8.375rem] laptop:pt-[0.625rem] laptop:pb-[0.625rem] laptop:gap-[0.625rem]">
+                        <h2
+                            class="font-montserrat font-bold text-[2.5rem] leading-[3.56rem] tracking-[0.0125rem] text-center mt-[2rem] text-primaryColor laptop:w-[34.9375rem] laptop:h-[7.125rem] laptop:font-montserrat laptop:font-bold laptop:text-[2.5rem] laptop:leading-[3.5rem] laptop:tracking-[0.0125rem] laptop:text-left">
+                            When you done check out and get it delivered.</h2>
+                    </div>
+
+                    <div
+                        class="w-[17.3125rem] h-[10.75rem] p-[0.625rem] gap-[0.625rem] mx-auto laptop:w-[28.75rem] laptop:h-[6rem] laptop:pt-[0.625rem] laptop:pb-[0.625rem] laptop:-[0.625rem]">
+                        <h4
+                            class="w-[16.0625rem] h-[9.5rem] text-center font-montserrat font-medium leading-[2.375rem] text-2xl tracking-[0.0125rem] text-lightGray ml-[0.5rem] mt-[3rem] laptop:w-[28.75rem] laptop:h-[4.75rem] laptop:font-montserrat laptop:text-2xl laptop:leading-[2.375rem] laptop:tracking-[0.0125rem] laptop:text-left laptop:relative laptop:right-[2rem]">
+                            When you done check out and get it
+                            delivered with ease.</h4>
+                    </div>
+                </div>
+
+                <!-- Right Container -->
+                <div class="h-[36.3125rem] laptop:w-[35.375rem] laptop:h-[31rem] laptop:mb-[3rem]">
+                    <div>
+                        <img src="./bella Olonje images/Rectangle (5).png" alt=""
+                            class="mt-[-7rem] ml-[2rem] laptop:w-full laptop:h-full laptop:relative laptop:bottom-[10rem] laptop:ml-[5rem]">
+                    </div>
+                </div>
+            </section>
+
+
+            <!--Top footer-->
+            <footer
+                class="w-[26.125rem] h-[35.25rem] pt-[6.8rem] pr-[1.5rem] pb-[6.8rem] pl-[1.5rem] gap-[3.125rem] bg-primaryColor mt-[20rem] laptop:w-[90rem] laptop:h-[32.25rem] laptop:bg-transparent">
+                <!-- Top container -->
+                <section class=" w-full h-full">
+                    <!-- Images -->
+                    <div class="laptop:block laptop:w-[90] laptop:[32.25rem]">
+                        <img src="./bella Olonje images/Rectangle 47.png" alt="" srcset="" class="hidden laptop:block">
+                    </div>
+
+                    <!--Main Texts container-->
+                    <div
+                        class="w-[20.625rem] h-[14.375rem] text-center laptop:relative laptop:bottom-[23rem] laptop:left-[3rem]  laptop:w-[53rem] laptop:h-[8.4375rem] laptop:ml-[18.125rem]">
+
+                        <div
+                            class="w-[20.625rem] h-[8.375rem] p-[0.625rem] gap-[0.625rem] laptop:w-[32.6875rem] laptop:h-[4.8rem] laptop:p-[0.625rem] laptop:gap-[0.625rem]">
+                            <h2
+                                class="w-[19.375rem] h-[7.125rem] font-montserrat font-bold text-[2.5rem] leading-[3.5625rem] tracking-[0.0125rem] text-white laptop:w-full laptop:font-montserrat laptop:font-bold laptop:text-[2.5rem] laptop:ml-[7rem]">
+                                Download the app now.</h2>
+                        </div>
+
+                        <div class="w-[16.5625rem] h-[6rem] p-[0.625rem] gap-[0.625rem] ml-[2rem]">
+                            <h4
+                                class="font-montserrat font-medium text-2xl tracking-[0.0125rem] leading-[2.375rem] text-lightGray mx-auto laptop:hidden">
+                                Most calendars are designed for teams.</h4>
+                        </div>
+
+                        <div
+                            class="hidden laptop:block laptop:w-[53.75rem] laptop:h-[3.625rem] laptop:p-[0.625rem] laptop:gap-[0.625rem]">
+                            <h4
+                                class="laptop:leading-[2.375rem] laptop:tracking-[0.0125rem] laptop:text-white laptop:font-montserrat laptop:font-medium laptop:text-2xl laptop:relative laptop:bottom-[7rem] laptop:right-[3.7rem]">
+                                Available on your favorite store. Start your premium experience now</h4>
+                        </div>
+                    </div>
+
+
+                    <!-- Buttons -->
+                    <div
+                        class="w-[23.18rem] h-[4rem] gap-[0.8125rem] mx-auto mt-[3rem]  laptop:flex laptop:w-[20.8125rem] laptop:h-[4rem] laptop:pt-[1rem] laptop:pl-[2.8125rem] laptop:pb-[1rem] laptop:pr-[2.8125rem] laptop:gap-[0.625rem laptop:relative laptop:bottom-[24rem]">
+                        <span
+                            class="laptop:flex laptop:w-[20.8125rem] laptop:h-[4rem]  laptop:pt-[1rem] laptop:pl-[2.8125rem] laptop:pb-[1rem] laptop:pr-[2.8125rem] laptop:gap-[0.625rem] ">
+                            <button
+                                class="w-[8.5625rem] h-[4rem] pt-[1.125rem] pr-[1.9375rem] pb-[1.125rem] pl-[1.9375rem] gap-[0.625rem] rounded-xl border bg-orangeColor hover:bg-white laptop:w-[8.875rem] laptop:h-[4rem] laptop:round-[0.625rem] laptop:pt-[1.125rem] laptop:pr-[1.9375rem] laptop:pl-[1.9375rem] laptop:gap-[0.625rem]"><span
+                                    class="w-[4.6875rem] h-[1.75rem] font-montserrat font-bold text-base leading-7 tracking-[0.0125rem] text-white hover:text-orangeColor">Playstore</span></button>
+                            <button
+                                class="w-[11.625rem] h-[3.75rem] rounded-xl border pt-[1rem]  pb-[1rem] gap-[0.625rem] hover:bg-white laptop:w-[14.8rem] laptop:h-[3.75rem] laptop:pt-[1rem] laptop:pb-[1rem] laptop:px-[3rem] laptop:gap-[0.625rem] laptop:whitespace-nowrap"><span
+                                    class="hover:text-orangeColor w-[6rem] h-[1.75rem] font-montserrat text-base font-bold leading-7 tracking-[0.0125rem] text-white laptop:w-[18.1875rem] laptop:h-[1.75rem] laptop:font-montserrat laptop:leading-7 laptop:tracking-[0.0125rem]">App
+                                    store</span></button>
+                        </span>
+                    </div>
+                </section>
+            </footer>
+
+
+            <!-- Bottom footer -->
+            <footer
+                class="w-[25.875rem] laptop:w-[75.625rem] laptop:h-[15.3125rem] laptop:ml-[7.1rem] laptop:flex laptop:justify-center laptop:items-center">
+                <div class="hidden laptop:block laptop:mr-[17rem] laptop:mt-[3rem]">
+                    <img src="./bella Olonje images/Bella Olonje logo 111 1.png" alt=""
+                        class="laptop:w-[12.875rem] laptop:h-[4.875rem] laptop:mt-[1.75rem] laptop:ml-[5.718rem]">
+                </div>
+
+                <div
+                    class="flex justify-center items-end w-[10.6rem] h-[8.5618rem] gap-[1.5rem] ml-[7rem] laptop:w-[10.685rem] laptop:h-[2.5618rem] laptop:mt-[2.875rem] laptop:gap-[1.5rem] laptop:relative laptop:right-[3.5rem]">
+                    <span class="w-[2.561rem] h-[2.561rem] relative top-2 laptop:w-[2rem] laptop:h-[1.6875rem]  "><img
+                            src="./bella Olonje images/twitter-vector.png" alt="twitter"></span>
+                    <span
+                        class="w-[2.561rem] h-[2.561rem]  relative top-1  laptop:w-[2.561rem] laptop:h-[2.561rem] laptop:relative laptop:top-[1rem]"><img
+                            src="./bella Olonje images/ant-design_facebook-filled (3).png" alt="facebook"></span>
+                    <span
+                        class="w-[2.561rem] h-[2.561rem] relative top-1.5  laptop:w-[2.43rem] laptop:h-[2.43rem] laptop:relative laptop:top-[1rem]"><img
+                            src="./bella Olonje images/linkedln-vector.png" alt=""></span>
+                </div>
+
+                <div
+                    class="laptop:w-[20.125rem] laptop:h-[1.125rem] laptop:pr-[0.625rem] laptop:pl-[0.625rem] laptop:gap-[0.625rem]  laptop:relative laptop:top-[2rem] laptop:left-[4.5rem]">
+                    <h4
+                        class="laptop:hidden w-[16.6rem] h-[1.125rem] gap-[0625rem] ml-[5rem] pl-[0.625rem] pr-[0.625rem] font-bold text-[0.75rem] leading-[1.125rem] tracking-[0.00625rem] font-Roboto laptop:w-[20.875rem] laptop:h-[1.125rem] laptop:font-Roboto laptop:font-bold laptop:text-[0.75rem] laptop:leading-[1.125rem] laptop:tracking-[0.00625rem] ">
+                        Just type what's on your mind and we'll</h4>
+                    <h4 class="hidden laptop:flex">Copywright 2020 Bella Onojie.com</h4>
+                </div>
+            </footer>
+        </main>
+        <script src="./app.js"></script>
+    </body>
+
+</html>

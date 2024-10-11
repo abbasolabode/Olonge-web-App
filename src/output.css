@@ -1,0 +1,2609 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1440px){
+  .container{
+    max-width: 1440px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
+.fixed{
+  position: fixed;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.left-\[21\.5rem\]{
+  left: 21.5rem;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.right-\[1\.8rem\]{
+  right: 1.8rem;
+}
+
+.right-\[4\.5rem\]{
+  right: 4.5rem;
+}
+
+.right-\[6rem\]{
+  right: 6rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-1{
+  top: 0.25rem;
+}
+
+.top-1\.5{
+  top: 0.375rem;
+}
+
+.top-2{
+  top: 0.5rem;
+}
+
+.top-3{
+  top: 0.75rem;
+}
+
+.top-\[10\.5rem\]{
+  top: 10.5rem;
+}
+
+.top-\[7rem\]{
+  top: 7rem;
+}
+
+.top-\[8rem\]{
+  top: 8rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-\[-1rem\]{
+  margin-left: -1rem;
+}
+
+.ml-\[0\.3rem\]{
+  margin-left: 0.3rem;
+}
+
+.ml-\[0\.5625rem\]{
+  margin-left: 0.5625rem;
+}
+
+.ml-\[0\.5rem\]{
+  margin-left: 0.5rem;
+}
+
+.ml-\[1\.5625rem\]{
+  margin-left: 1.5625rem;
+}
+
+.ml-\[1\.5rem\]{
+  margin-left: 1.5rem;
+}
+
+.ml-\[1rem\]{
+  margin-left: 1rem;
+}
+
+.ml-\[2rem\]{
+  margin-left: 2rem;
+}
+
+.ml-\[3\.125rem\]{
+  margin-left: 3.125rem;
+}
+
+.ml-\[3rem\]{
+  margin-left: 3rem;
+}
+
+.ml-\[4rem\]{
+  margin-left: 4rem;
+}
+
+.ml-\[5\.56rem\]{
+  margin-left: 5.56rem;
+}
+
+.ml-\[5\.5rem\]{
+  margin-left: 5.5rem;
+}
+
+.ml-\[5rem\]{
+  margin-left: 5rem;
+}
+
+.ml-\[7rem\]{
+  margin-left: 7rem;
+}
+
+.ml-\[8\.5rem\]{
+  margin-left: 8.5rem;
+}
+
+.mr-\[2rem\]{
+  margin-right: 2rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mt-\[-5rem\]{
+  margin-top: -5rem;
+}
+
+.mt-\[-7rem\]{
+  margin-top: -7rem;
+}
+
+.mt-\[0\.5rem\]{
+  margin-top: 0.5rem;
+}
+
+.mt-\[1\.6325rem\]{
+  margin-top: 1.6325rem;
+}
+
+.mt-\[10rem\]{
+  margin-top: 10rem;
+}
+
+.mt-\[14rem\]{
+  margin-top: 14rem;
+}
+
+.mt-\[15rem\]{
+  margin-top: 15rem;
+}
+
+.mt-\[1rem\]{
+  margin-top: 1rem;
+}
+
+.mt-\[2\.5rem\]{
+  margin-top: 2.5rem;
+}
+
+.mt-\[2\.6rem\]{
+  margin-top: 2.6rem;
+}
+
+.mt-\[20rem\]{
+  margin-top: 20rem;
+}
+
+.mt-\[2rem\]{
+  margin-top: 2rem;
+}
+
+.mt-\[3\.125rem\]{
+  margin-top: 3.125rem;
+}
+
+.mt-\[3rem\]{
+  margin-top: 3rem;
+}
+
+.mt-\[4rem\]{
+  margin-top: 4rem;
+}
+
+.mt-\[5rem\]{
+  margin-top: 5rem;
+}
+
+.mt-\[6\.125rem\]{
+  margin-top: 6.125rem;
+}
+
+.mt-\[7rem\]{
+  margin-top: 7rem;
+}
+
+.mt-\[8\.125rem\]{
+  margin-top: 8.125rem;
+}
+
+.mt-\[9\.125rem\]{
+  margin-top: 9.125rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.h-\[1\.125rem\]{
+  height: 1.125rem;
+}
+
+.h-\[1\.25rem\]{
+  height: 1.25rem;
+}
+
+.h-\[1\.3125rem\]{
+  height: 1.3125rem;
+}
+
+.h-\[1\.32rem\]{
+  height: 1.32rem;
+}
+
+.h-\[1\.5rem\]{
+  height: 1.5rem;
+}
+
+.h-\[1\.75rem\]{
+  height: 1.75rem;
+}
+
+.h-\[10\.14rem\]{
+  height: 10.14rem;
+}
+
+.h-\[10\.6rem\]{
+  height: 10.6rem;
+}
+
+.h-\[10\.75rem\]{
+  height: 10.75rem;
+}
+
+.h-\[11\.9rem\]{
+  height: 11.9rem;
+}
+
+.h-\[14\.25rem\]{
+  height: 14.25rem;
+}
+
+.h-\[14\.375rem\]{
+  height: 14.375rem;
+}
+
+.h-\[15\.175rem\]{
+  height: 15.175rem;
+}
+
+.h-\[15\.1875rem\]{
+  height: 15.1875rem;
+}
+
+.h-\[15\.5rem\]{
+  height: 15.5rem;
+}
+
+.h-\[17\.5rem\]{
+  height: 17.5rem;
+}
+
+.h-\[17\.625rem\]{
+  height: 17.625rem;
+}
+
+.h-\[2\.25rem\]{
+  height: 2.25rem;
+}
+
+.h-\[2\.561rem\]{
+  height: 2.561rem;
+}
+
+.h-\[20\.625rem\]{
+  height: 20.625rem;
+}
+
+.h-\[23\.875rem\]{
+  height: 23.875rem;
+}
+
+.h-\[28\.6rem\]{
+  height: 28.6rem;
+}
+
+.h-\[2rem\]{
+  height: 2rem;
+}
+
+.h-\[3\.21rem\]{
+  height: 3.21rem;
+}
+
+.h-\[3\.6875rem\]{
+  height: 3.6875rem;
+}
+
+.h-\[3\.75rem\]{
+  height: 3.75rem;
+}
+
+.h-\[30\.75rem\]{
+  height: 30.75rem;
+}
+
+.h-\[31\.9375rem\]{
+  height: 31.9375rem;
+}
+
+.h-\[35\.25rem\]{
+  height: 35.25rem;
+}
+
+.h-\[36\.3125rem\]{
+  height: 36.3125rem;
+}
+
+.h-\[36\.3rem\]{
+  height: 36.3rem;
+}
+
+.h-\[38\.3125rem\]{
+  height: 38.3125rem;
+}
+
+.h-\[3rem\]{
+  height: 3rem;
+}
+
+.h-\[4\.25rem\]{
+  height: 4.25rem;
+}
+
+.h-\[4\.375rem\]{
+  height: 4.375rem;
+}
+
+.h-\[4\.75rem\]{
+  height: 4.75rem;
+}
+
+.h-\[4\.875rem\]{
+  height: 4.875rem;
+}
+
+.h-\[44\.43rem\]{
+  height: 44.43rem;
+}
+
+.h-\[4rem\]{
+  height: 4rem;
+}
+
+.h-\[58\.1875rem\]{
+  height: 58.1875rem;
+}
+
+.h-\[6rem\]{
+  height: 6rem;
+}
+
+.h-\[7\.125rem\]{
+  height: 7.125rem;
+}
+
+.h-\[7rem\]{
+  height: 7rem;
+}
+
+.h-\[8\.375rem\]{
+  height: 8.375rem;
+}
+
+.h-\[8\.5618rem\]{
+  height: 8.5618rem;
+}
+
+.h-\[8rem\]{
+  height: 8rem;
+}
+
+.h-\[9\.25rem\]{
+  height: 9.25rem;
+}
+
+.h-\[9\.5rem\]{
+  height: 9.5rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.min-h-full{
+  min-height: 100%;
+}
+
+.w-\[10\.4375rem\]{
+  width: 10.4375rem;
+}
+
+.w-\[10\.6rem\]{
+  width: 10.6rem;
+}
+
+.w-\[11\.625rem\]{
+  width: 11.625rem;
+}
+
+.w-\[14\.5rem\]{
+  width: 14.5rem;
+}
+
+.w-\[14\.75rem\]{
+  width: 14.75rem;
+}
+
+.w-\[14rem\]{
+  width: 14rem;
+}
+
+.w-\[16\.0625rem\]{
+  width: 16.0625rem;
+}
+
+.w-\[16\.5625rem\]{
+  width: 16.5625rem;
+}
+
+.w-\[16\.6rem\]{
+  width: 16.6rem;
+}
+
+.w-\[16rem\]{
+  width: 16rem;
+}
+
+.w-\[17\.3125rem\]{
+  width: 17.3125rem;
+}
+
+.w-\[17\.3rem\]{
+  width: 17.3rem;
+}
+
+.w-\[19\.375rem\]{
+  width: 19.375rem;
+}
+
+.w-\[19\.625rem\]{
+  width: 19.625rem;
+}
+
+.w-\[2\.561rem\]{
+  width: 2.561rem;
+}
+
+.w-\[2\.5rem\]{
+  width: 2.5rem;
+}
+
+.w-\[20\.4rem\]{
+  width: 20.4rem;
+}
+
+.w-\[20\.625rem\]{
+  width: 20.625rem;
+}
+
+.w-\[21\.375rem\]{
+  width: 21.375rem;
+}
+
+.w-\[21\.6rem\]{
+  width: 21.6rem;
+}
+
+.w-\[21rem\]{
+  width: 21rem;
+}
+
+.w-\[22\.3rem\]{
+  width: 22.3rem;
+}
+
+.w-\[22\.625rem\]{
+  width: 22.625rem;
+}
+
+.w-\[23\.18rem\]{
+  width: 23.18rem;
+}
+
+.w-\[23\.6rem\]{
+  width: 23.6rem;
+}
+
+.w-\[23\.875rem\]{
+  width: 23.875rem;
+}
+
+.w-\[24\.4375rem\]{
+  width: 24.4375rem;
+}
+
+.w-\[25\.6875rem\]{
+  width: 25.6875rem;
+}
+
+.w-\[25\.875rem\]{
+  width: 25.875rem;
+}
+
+.w-\[26\.125rem\]{
+  width: 26.125rem;
+}
+
+.w-\[26\.375rem\]{
+  width: 26.375rem;
+}
+
+.w-\[2rem\]{
+  width: 2rem;
+}
+
+.w-\[3\.25rem\]{
+  width: 3.25rem;
+}
+
+.w-\[35\.5\.3125rem\]{
+  width: 35.5.3125rem;
+}
+
+.w-\[4\.18rem\]{
+  width: 4.18rem;
+}
+
+.w-\[4\.25rem\]{
+  width: 4.25rem;
+}
+
+.w-\[4\.4375rem\]{
+  width: 4.4375rem;
+}
+
+.w-\[4\.5rem\]{
+  width: 4.5rem;
+}
+
+.w-\[4\.6875rem\]{
+  width: 4.6875rem;
+}
+
+.w-\[5\.4375rem\]{
+  width: 5.4375rem;
+}
+
+.w-\[5\.5rem\]{
+  width: 5.5rem;
+}
+
+.w-\[6\.4375rem\]{
+  width: 6.4375rem;
+}
+
+.w-\[6\.5rem\]{
+  width: 6.5rem;
+}
+
+.w-\[6rem\]{
+  width: 6rem;
+}
+
+.w-\[7\.6875rem\]{
+  width: 7.6875rem;
+}
+
+.w-\[8\.22rem\]{
+  width: 8.22rem;
+}
+
+.w-\[8\.5625rem\]{
+  width: 8.5625rem;
+}
+
+.w-\[9\.375rem\]{
+  width: 9.375rem;
+}
+
+.w-\[9\.3rem\]{
+  width: 9.3rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
+.items-end{
+  align-items: flex-end;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-2\.5{
+  gap: 0.625rem;
+}
+
+.gap-\[0\.625rem\]{
+  gap: 0.625rem;
+}
+
+.gap-\[0\.8125rem\]{
+  gap: 0.8125rem;
+}
+
+.gap-\[0625rem\]{
+  gap: 0625rem;
+}
+
+.gap-\[1\.5rem\]{
+  gap: 1.5rem;
+}
+
+.gap-\[1\.875rem\]{
+  gap: 1.875rem;
+}
+
+.gap-\[3\.125rem\]{
+  gap: 3.125rem;
+}
+
+.gap-\[3\.75rem\]{
+  gap: 3.75rem;
+}
+
+.gap-\[8rem\]{
+  gap: 8rem;
+}
+
+.self-start{
+  align-self: flex-start;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.rounded-\[1\.875rem\]{
+  border-radius: 1.875rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-\[0\.003rem\]{
+  border-width: 0.003rem;
+}
+
+.border-\[0\.1875rem\]{
+  border-width: 0.1875rem;
+}
+
+.bg-orangeColor{
+  background-color: hsla(16, 96%, 51%, 1);
+}
+
+.bg-primaryColor{
+  background-color: hsla(228, 28%, 20%, 1);
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-\[0\.625rem\]{
+  padding: 0.625rem;
+}
+
+.pb-\[1\.125rem\]{
+  padding-bottom: 1.125rem;
+}
+
+.pb-\[1rem\]{
+  padding-bottom: 1rem;
+}
+
+.pb-\[6\.25rem\]{
+  padding-bottom: 6.25rem;
+}
+
+.pb-\[6\.8rem\]{
+  padding-bottom: 6.8rem;
+}
+
+.pl-\[0\.09375rem\]{
+  padding-left: 0.09375rem;
+}
+
+.pl-\[0\.625rem\]{
+  padding-left: 0.625rem;
+}
+
+.pl-\[1\.25rem\]{
+  padding-left: 1.25rem;
+}
+
+.pl-\[1\.5rem\]{
+  padding-left: 1.5rem;
+}
+
+.pl-\[1\.9375rem\]{
+  padding-left: 1.9375rem;
+}
+
+.pl-\[2rem\]{
+  padding-left: 2rem;
+}
+
+.pr-\[0\.625rem\]{
+  padding-right: 0.625rem;
+}
+
+.pr-\[1\.25rem\]{
+  padding-right: 1.25rem;
+}
+
+.pr-\[1\.5rem\]{
+  padding-right: 1.5rem;
+}
+
+.pr-\[1\.9375rem\]{
+  padding-right: 1.9375rem;
+}
+
+.pt-\[1\.125rem\]{
+  padding-top: 1.125rem;
+}
+
+.pt-\[1rem\]{
+  padding-top: 1rem;
+}
+
+.pt-\[5rem\]{
+  padding-top: 5rem;
+}
+
+.pt-\[6\.25rem\]{
+  padding-top: 6.25rem;
+}
+
+.pt-\[6\.8rem\]{
+  padding-top: 6.8rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.font-Roboto{
+  font-family: "Roboto", "sans-serif";
+}
+
+.font-montserrat{
+  font-family: "Montserrat", "sans-serif";
+}
+
+.font-poppins{
+  font-family: "Poppins", "sans-serif";
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[0\.75rem\]{
+  font-size: 0.75rem;
+}
+
+.text-\[0\.9375rem\]{
+  font-size: 0.9375rem;
+}
+
+.text-\[1\.125rem\]{
+  font-size: 1.125rem;
+}
+
+.text-\[2\.25rem\]{
+  font-size: 2.25rem;
+}
+
+.text-\[2\.5rem\]{
+  font-size: 2.5rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.lowercase{
+  text-transform: lowercase;
+}
+
+.leading-6{
+  line-height: 1.5rem;
+}
+
+.leading-7{
+  line-height: 1.75rem;
+}
+
+.leading-8{
+  line-height: 2rem;
+}
+
+.leading-9{
+  line-height: 2.25rem;
+}
+
+.leading-\[1\.11875rem\]{
+  line-height: 1.11875rem;
+}
+
+.leading-\[1\.125rem\]{
+  line-height: 1.125rem;
+}
+
+.leading-\[1\.3425rem\]{
+  line-height: 1.3425rem;
+}
+
+.leading-\[2\.375rem\]{
+  line-height: 2.375rem;
+}
+
+.leading-\[2\.656rem\]{
+  line-height: 2.656rem;
+}
+
+.leading-\[3\.5625rem\]{
+  line-height: 3.5625rem;
+}
+
+.leading-\[3\.56rem\]{
+  line-height: 3.56rem;
+}
+
+.leading-\[3\.5rem\]{
+  line-height: 3.5rem;
+}
+
+.tracking-\[0\.0\.125rem\]{
+  letter-spacing: 0.0.125rem;
+}
+
+.tracking-\[0\.00625rem\]{
+  letter-spacing: 0.00625rem;
+}
+
+.tracking-\[0\.0125rem\]{
+  letter-spacing: 0.0125rem;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-green-600{
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.text-horizontalRule{
+  color: hsla(0, 0%, 90%, 1);
+}
+
+.text-lightGray{
+  color: hsla(0, 0%, 45%, 1);
+}
+
+.text-orangeColor{
+  color: hsla(16, 96%, 51%, 1);
+}
+
+.text-primaryColor{
+  color: hsla(228, 28%, 20%, 1);
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline-offset-\[2rem\]{
+  text-underline-offset: 2rem;
+}
+
+.opacity-0{
+  opacity: 0;
+}
+
+.opacity-40{
+  opacity: 0.4;
+}
+
+.opacity-\[3\.75rem\]{
+  opacity: 3.75rem;
+}
+
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1000{
+  transition-duration: 1000ms;
+}
+
+.placeholder\:ml-\[3\.125rem\]::-moz-placeholder{
+  margin-left: 3.125rem;
+}
+
+.placeholder\:ml-\[3\.125rem\]::placeholder{
+  margin-left: 3.125rem;
+}
+
+.placeholder\:h-\[1\.25rem\]::-moz-placeholder{
+  height: 1.25rem;
+}
+
+.placeholder\:h-\[1\.25rem\]::placeholder{
+  height: 1.25rem;
+}
+
+.placeholder\:w-\[6rem\]::-moz-placeholder{
+  width: 6rem;
+}
+
+.placeholder\:w-\[6rem\]::placeholder{
+  width: 6rem;
+}
+
+.placeholder\:bg-none::-moz-placeholder{
+  background-image: none;
+}
+
+.placeholder\:bg-none::placeholder{
+  background-image: none;
+}
+
+.placeholder\:font-semibold::-moz-placeholder{
+  font-weight: 600;
+}
+
+.placeholder\:font-semibold::placeholder{
+  font-weight: 600;
+}
+
+.placeholder\:leading-\[1\.2rem\]::-moz-placeholder{
+  line-height: 1.2rem;
+}
+
+.placeholder\:leading-\[1\.2rem\]::placeholder{
+  line-height: 1.2rem;
+}
+
+.placeholder\:text-black::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-black::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-orangeColor:hover{
+  color: hsla(16, 96%, 51%, 1);
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover{
+  text-decoration-line: underline;
+}
+
+.hover\:decoration-orangeColor:hover{
+  text-decoration-color: hsla(16, 96%, 51%, 1);
+}
+
+@media (min-width: 1440px){
+  .laptop\:absolute{
+    position: absolute;
+  }
+
+  .laptop\:relative{
+    position: relative;
+  }
+
+  .laptop\:bottom-12{
+    bottom: 3rem;
+  }
+
+  .laptop\:bottom-\[10rem\]{
+    bottom: 10rem;
+  }
+
+  .laptop\:bottom-\[13rem\]{
+    bottom: 13rem;
+  }
+
+  .laptop\:bottom-\[20rem\]{
+    bottom: 20rem;
+  }
+
+  .laptop\:bottom-\[23rem\]{
+    bottom: 23rem;
+  }
+
+  .laptop\:bottom-\[24rem\]{
+    bottom: 24rem;
+  }
+
+  .laptop\:bottom-\[2rem\]{
+    bottom: 2rem;
+  }
+
+  .laptop\:bottom-\[3\.2rem\]{
+    bottom: 3.2rem;
+  }
+
+  .laptop\:bottom-\[5rem\]{
+    bottom: 5rem;
+  }
+
+  .laptop\:bottom-\[7rem\]{
+    bottom: 7rem;
+  }
+
+  .laptop\:left-5{
+    left: 1.25rem;
+  }
+
+  .laptop\:left-\[10rem\]{
+    left: 10rem;
+  }
+
+  .laptop\:left-\[20rem\]{
+    left: 20rem;
+  }
+
+  .laptop\:left-\[3rem\]{
+    left: 3rem;
+  }
+
+  .laptop\:left-\[4\.5rem\]{
+    left: 4.5rem;
+  }
+
+  .laptop\:left-\[6rem\]{
+    left: 6rem;
+  }
+
+  .laptop\:right-10{
+    right: 2.5rem;
+  }
+
+  .laptop\:right-\[2rem\]{
+    right: 2rem;
+  }
+
+  .laptop\:right-\[3\.5rem\]{
+    right: 3.5rem;
+  }
+
+  .laptop\:right-\[3\.7rem\]{
+    right: 3.7rem;
+  }
+
+  .laptop\:right-\[5\.4rem\]{
+    right: 5.4rem;
+  }
+
+  .laptop\:top-0{
+    top: 0px;
+  }
+
+  .laptop\:top-8{
+    top: 2rem;
+  }
+
+  .laptop\:top-\[-26rem\]{
+    top: -26rem;
+  }
+
+  .laptop\:top-\[-9rem\]{
+    top: -9rem;
+  }
+
+  .laptop\:top-\[1rem\]{
+    top: 1rem;
+  }
+
+  .laptop\:top-\[2rem\]{
+    top: 2rem;
+  }
+
+  .laptop\:top-\[5rem\]{
+    top: 5rem;
+  }
+
+  .laptop\:top-\[7rem\]{
+    top: 7rem;
+  }
+
+  .laptop\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .laptop\:mb-\[2rem\]{
+    margin-bottom: 2rem;
+  }
+
+  .laptop\:mb-\[3rem\]{
+    margin-bottom: 3rem;
+  }
+
+  .laptop\:ml-14{
+    margin-left: 3.5rem;
+  }
+
+  .laptop\:ml-\[-10rem\]{
+    margin-left: -10rem;
+  }
+
+  .laptop\:ml-\[13\.5625rem\]{
+    margin-left: 13.5625rem;
+  }
+
+  .laptop\:ml-\[18\.125rem\]{
+    margin-left: 18.125rem;
+  }
+
+  .laptop\:ml-\[2\.125rem\]{
+    margin-left: 2.125rem;
+  }
+
+  .laptop\:ml-\[27\.875rem\]{
+    margin-left: 27.875rem;
+  }
+
+  .laptop\:ml-\[35rem\]{
+    margin-left: 35rem;
+  }
+
+  .laptop\:ml-\[3rem\]{
+    margin-left: 3rem;
+  }
+
+  .laptop\:ml-\[4\.375rem\]{
+    margin-left: 4.375rem;
+  }
+
+  .laptop\:ml-\[40\.6875rem\]{
+    margin-left: 40.6875rem;
+  }
+
+  .laptop\:ml-\[5\.718rem\]{
+    margin-left: 5.718rem;
+  }
+
+  .laptop\:ml-\[5rem\]{
+    margin-left: 5rem;
+  }
+
+  .laptop\:ml-\[6rem\]{
+    margin-left: 6rem;
+  }
+
+  .laptop\:ml-\[7\.1rem\]{
+    margin-left: 7.1rem;
+  }
+
+  .laptop\:ml-\[7rem\]{
+    margin-left: 7rem;
+  }
+
+  .laptop\:ml-\[8\.5rem\]{
+    margin-left: 8.5rem;
+  }
+
+  .laptop\:ml-\[8rem\]{
+    margin-left: 8rem;
+  }
+
+  .laptop\:ml-\[\]{
+    margin-left: ;
+  }
+
+  .laptop\:mr-\[1\.7rem\]{
+    margin-right: 1.7rem;
+  }
+
+  .laptop\:mr-\[17rem\]{
+    margin-right: 17rem;
+  }
+
+  .laptop\:mr-\[25rem\]{
+    margin-right: 25rem;
+  }
+
+  .laptop\:mt-0{
+    margin-top: 0px;
+  }
+
+  .laptop\:mt-\[-15rem\]{
+    margin-top: -15rem;
+  }
+
+  .laptop\:mt-\[-40rem\]{
+    margin-top: -40rem;
+  }
+
+  .laptop\:mt-\[1\.75rem\]{
+    margin-top: 1.75rem;
+  }
+
+  .laptop\:mt-\[2\.875rem\]{
+    margin-top: 2.875rem;
+  }
+
+  .laptop\:mt-\[2rem\]{
+    margin-top: 2rem;
+  }
+
+  .laptop\:mt-\[3rem\]{
+    margin-top: 3rem;
+  }
+
+  .laptop\:mt-\[4\.5rem\]{
+    margin-top: 4.5rem;
+  }
+
+  .laptop\:mt-\[4rem\]{
+    margin-top: 4rem;
+  }
+
+  .laptop\:mt-\[5\.1875rem\]{
+    margin-top: 5.1875rem;
+  }
+
+  .laptop\:mt-\[5\.5rem\]{
+    margin-top: 5.5rem;
+  }
+
+  .laptop\:mt-\[5rem\]{
+    margin-top: 5rem;
+  }
+
+  .laptop\:block{
+    display: block;
+  }
+
+  .laptop\:inline{
+    display: inline;
+  }
+
+  .laptop\:flex{
+    display: flex;
+  }
+
+  .laptop\:hidden{
+    display: none;
+  }
+
+  .laptop\:h-0{
+    height: 0px;
+  }
+
+  .laptop\:h-\[1\.125rem\]{
+    height: 1.125rem;
+  }
+
+  .laptop\:h-\[1\.6875rem\]{
+    height: 1.6875rem;
+  }
+
+  .laptop\:h-\[1\.75rem\]{
+    height: 1.75rem;
+  }
+
+  .laptop\:h-\[10rem\]{
+    height: 10rem;
+  }
+
+  .laptop\:h-\[15\.3125rem\]{
+    height: 15.3125rem;
+  }
+
+  .laptop\:h-\[17\.5rem\]{
+    height: 17.5rem;
+  }
+
+  .laptop\:h-\[2\.25rem\]{
+    height: 2.25rem;
+  }
+
+  .laptop\:h-\[2\.375rem\]{
+    height: 2.375rem;
+  }
+
+  .laptop\:h-\[2\.43rem\]{
+    height: 2.43rem;
+  }
+
+  .laptop\:h-\[2\.5618rem\]{
+    height: 2.5618rem;
+  }
+
+  .laptop\:h-\[2\.561rem\]{
+    height: 2.561rem;
+  }
+
+  .laptop\:h-\[20\.375rem\]{
+    height: 20.375rem;
+  }
+
+  .laptop\:h-\[3\.625rem\]{
+    height: 3.625rem;
+  }
+
+  .laptop\:h-\[3\.75rem\]{
+    height: 3.75rem;
+  }
+
+  .laptop\:h-\[30rem\]{
+    height: 30rem;
+  }
+
+  .laptop\:h-\[31rem\]{
+    height: 31rem;
+  }
+
+  .laptop\:h-\[32\.25rem\]{
+    height: 32.25rem;
+  }
+
+  .laptop\:h-\[38\.6875rem\]{
+    height: 38.6875rem;
+  }
+
+  .laptop\:h-\[3rem\]{
+    height: 3rem;
+  }
+
+  .laptop\:h-\[4\.25rem\]{
+    height: 4.25rem;
+  }
+
+  .laptop\:h-\[4\.75rem\]{
+    height: 4.75rem;
+  }
+
+  .laptop\:h-\[4\.875rem\]{
+    height: 4.875rem;
+  }
+
+  .laptop\:h-\[4\.8rem\]{
+    height: 4.8rem;
+  }
+
+  .laptop\:h-\[40rem\]{
+    height: 40rem;
+  }
+
+  .laptop\:h-\[4rem\]{
+    height: 4rem;
+  }
+
+  .laptop\:h-\[50\.4rem\]{
+    height: 50.4rem;
+  }
+
+  .laptop\:h-\[50rem\]{
+    height: 50rem;
+  }
+
+  .laptop\:h-\[53rem\]{
+    height: 53rem;
+  }
+
+  .laptop\:h-\[6\.3125rem\]{
+    height: 6.3125rem;
+  }
+
+  .laptop\:h-\[6rem\]{
+    height: 6rem;
+  }
+
+  .laptop\:h-\[7\.125rem\]{
+    height: 7.125rem;
+  }
+
+  .laptop\:h-\[8\.375rem\]{
+    height: 8.375rem;
+  }
+
+  .laptop\:h-\[8\.4375rem\]{
+    height: 8.4375rem;
+  }
+
+  .laptop\:h-\[9\.75rem\]{
+    height: 9.75rem;
+  }
+
+  .laptop\:h-full{
+    height: 100%;
+  }
+
+  .laptop\:w-\[10\.685rem\]{
+    width: 10.685rem;
+  }
+
+  .laptop\:w-\[12\.875rem\]{
+    width: 12.875rem;
+  }
+
+  .laptop\:w-\[14\.5rem\]{
+    width: 14.5rem;
+  }
+
+  .laptop\:w-\[14\.75rem\]{
+    width: 14.75rem;
+  }
+
+  .laptop\:w-\[14\.8rem\]{
+    width: 14.8rem;
+  }
+
+  .laptop\:w-\[14rem\]{
+    width: 14rem;
+  }
+
+  .laptop\:w-\[15\.375rem\]{
+    width: 15.375rem;
+  }
+
+  .laptop\:w-\[18\.1875rem\]{
+    width: 18.1875rem;
+  }
+
+  .laptop\:w-\[2\.43rem\]{
+    width: 2.43rem;
+  }
+
+  .laptop\:w-\[2\.561rem\]{
+    width: 2.561rem;
+  }
+
+  .laptop\:w-\[20\.125rem\]{
+    width: 20.125rem;
+  }
+
+  .laptop\:w-\[20\.8125rem\]{
+    width: 20.8125rem;
+  }
+
+  .laptop\:w-\[20\.875rem\]{
+    width: 20.875rem;
+  }
+
+  .laptop\:w-\[25\.5rem\]{
+    width: 25.5rem;
+  }
+
+  .laptop\:w-\[28\.5625rem\]{
+    width: 28.5625rem;
+  }
+
+  .laptop\:w-\[28\.75rem\]{
+    width: 28.75rem;
+  }
+
+  .laptop\:w-\[28\.875rem\]{
+    width: 28.875rem;
+  }
+
+  .laptop\:w-\[29\.1875rem\]{
+    width: 29.1875rem;
+  }
+
+  .laptop\:w-\[29\.1rem\]{
+    width: 29.1rem;
+  }
+
+  .laptop\:w-\[2rem\]{
+    width: 2rem;
+  }
+
+  .laptop\:w-\[3\.1875rem\]{
+    width: 3.1875rem;
+  }
+
+  .laptop\:w-\[3\.25rem\]{
+    width: 3.25rem;
+  }
+
+  .laptop\:w-\[30rem\]{
+    width: 30rem;
+  }
+
+  .laptop\:w-\[32\.6875rem\]{
+    width: 32.6875rem;
+  }
+
+  .laptop\:w-\[32\.8rem\]{
+    width: 32.8rem;
+  }
+
+  .laptop\:w-\[34\.4375rem\]{
+    width: 34.4375rem;
+  }
+
+  .laptop\:w-\[34\.9375rem\]{
+    width: 34.9375rem;
+  }
+
+  .laptop\:w-\[35\.375rem\]{
+    width: 35.375rem;
+  }
+
+  .laptop\:w-\[35\.5rem\]{
+    width: 35.5rem;
+  }
+
+  .laptop\:w-\[35rem\]{
+    width: 35rem;
+  }
+
+  .laptop\:w-\[36\.25rem\]{
+    width: 36.25rem;
+  }
+
+  .laptop\:w-\[37rem\]{
+    width: 37rem;
+  }
+
+  .laptop\:w-\[4\.25rem\]{
+    width: 4.25rem;
+  }
+
+  .laptop\:w-\[4\.4375rem\]{
+    width: 4.4375rem;
+  }
+
+  .laptop\:w-\[40rem\]{
+    width: 40rem;
+  }
+
+  .laptop\:w-\[45\.5rem\]{
+    width: 45.5rem;
+  }
+
+  .laptop\:w-\[5\.4375rem\]{
+    width: 5.4375rem;
+  }
+
+  .laptop\:w-\[5\.5rem\]{
+    width: 5.5rem;
+  }
+
+  .laptop\:w-\[53\.75rem\]{
+    width: 53.75rem;
+  }
+
+  .laptop\:w-\[53rem\]{
+    width: 53rem;
+  }
+
+  .laptop\:w-\[55\.25rem\]{
+    width: 55.25rem;
+  }
+
+  .laptop\:w-\[55\.5625rem\]{
+    width: 55.5625rem;
+  }
+
+  .laptop\:w-\[62\.8125rem\]{
+    width: 62.8125rem;
+  }
+
+  .laptop\:w-\[62rem\]{
+    width: 62rem;
+  }
+
+  .laptop\:w-\[7\.6875rem\]{
+    width: 7.6875rem;
+  }
+
+  .laptop\:w-\[75\.625rem\]{
+    width: 75.625rem;
+  }
+
+  .laptop\:w-\[8\.4rem\]{
+    width: 8.4rem;
+  }
+
+  .laptop\:w-\[8\.875rem\]{
+    width: 8.875rem;
+  }
+
+  .laptop\:w-\[90\]{
+    width: 90;
+  }
+
+  .laptop\:w-\[90rem\]{
+    width: 90rem;
+  }
+
+  .laptop\:w-full{
+    width: 100%;
+  }
+
+  .laptop\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .laptop\:flex-row{
+    flex-direction: row;
+  }
+
+  .laptop\:flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+
+  .laptop\:flex-col{
+    flex-direction: column;
+  }
+
+  .laptop\:items-center{
+    align-items: center;
+  }
+
+  .laptop\:justify-end{
+    justify-content: flex-end;
+  }
+
+  .laptop\:justify-center{
+    justify-content: center;
+  }
+
+  .laptop\:justify-between{
+    justify-content: space-between;
+  }
+
+  .laptop\:justify-around{
+    justify-content: space-around;
+  }
+
+  .laptop\:gap-\[0\.625rem\]{
+    gap: 0.625rem;
+  }
+
+  .laptop\:gap-\[1\.5rem\]{
+    gap: 1.5rem;
+  }
+
+  .laptop\:gap-\[4\.375rem\]{
+    gap: 4.375rem;
+  }
+
+  .laptop\:gap-\[5\.875rem\]{
+    gap: 5.875rem;
+  }
+
+  .laptop\:whitespace-nowrap{
+    white-space: nowrap;
+  }
+
+  .laptop\:bg-transparent{
+    background-color: transparent;
+  }
+
+  .laptop\:bg-contain{
+    background-size: contain;
+  }
+
+  .laptop\:p-\[0\.625rem\]{
+    padding: 0.625rem;
+  }
+
+  .laptop\:px-\[3rem\]{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .laptop\:pb-2\.5{
+    padding-bottom: 0.625rem;
+  }
+
+  .laptop\:pb-\[0\.625rem\]{
+    padding-bottom: 0.625rem;
+  }
+
+  .laptop\:pb-\[1rem\]{
+    padding-bottom: 1rem;
+  }
+
+  .laptop\:pl-0{
+    padding-left: 0px;
+  }
+
+  .laptop\:pl-\[0\.625rem\]{
+    padding-left: 0.625rem;
+  }
+
+  .laptop\:pl-\[1\.9375rem\]{
+    padding-left: 1.9375rem;
+  }
+
+  .laptop\:pl-\[2\.8125rem\]{
+    padding-left: 2.8125rem;
+  }
+
+  .laptop\:pr-0{
+    padding-right: 0px;
+  }
+
+  .laptop\:pr-\[0\.625rem\]{
+    padding-right: 0.625rem;
+  }
+
+  .laptop\:pr-\[1\.9375rem\]{
+    padding-right: 1.9375rem;
+  }
+
+  .laptop\:pr-\[2\.8125rem\]{
+    padding-right: 2.8125rem;
+  }
+
+  .laptop\:pt-2\.5{
+    padding-top: 0.625rem;
+  }
+
+  .laptop\:pt-\[0\.625rem\]{
+    padding-top: 0.625rem;
+  }
+
+  .laptop\:pt-\[1\.125rem\]{
+    padding-top: 1.125rem;
+  }
+
+  .laptop\:pt-\[1rem\]{
+    padding-top: 1rem;
+  }
+
+  .laptop\:text-left{
+    text-align: left;
+  }
+
+  .laptop\:text-center{
+    text-align: center;
+  }
+
+  .laptop\:text-right{
+    text-align: right;
+  }
+
+  .laptop\:font-Roboto{
+    font-family: "Roboto", "sans-serif";
+  }
+
+  .laptop\:font-montserrat{
+    font-family: "Montserrat", "sans-serif";
+  }
+
+  .laptop\:font-poppins{
+    font-family: "Poppins", "sans-serif";
+  }
+
+  .laptop\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .laptop\:text-\[0\.75rem\]{
+    font-size: 0.75rem;
+  }
+
+  .laptop\:text-\[1\.5rem\]{
+    font-size: 1.5rem;
+  }
+
+  .laptop\:text-\[2\.5rem\]{
+    font-size: 2.5rem;
+  }
+
+  .laptop\:text-\[2\.75rem\]{
+    font-size: 2.75rem;
+  }
+
+  .laptop\:text-\[3\.625rem\]{
+    font-size: 3.625rem;
+  }
+
+  .laptop\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .laptop\:font-bold{
+    font-weight: 700;
+  }
+
+  .laptop\:font-medium{
+    font-weight: 500;
+  }
+
+  .laptop\:font-semibold{
+    font-weight: 600;
+  }
+
+  .laptop\:leading-7{
+    line-height: 1.75rem;
+  }
+
+  .laptop\:leading-9{
+    line-height: 2.25rem;
+  }
+
+  .laptop\:leading-\[1\.125rem\]{
+    line-height: 1.125rem;
+  }
+
+  .laptop\:leading-\[1\.75rem\]{
+    line-height: 1.75rem;
+  }
+
+  .laptop\:leading-\[2\.25rem\]{
+    line-height: 2.25rem;
+  }
+
+  .laptop\:leading-\[2\.375rem\]{
+    line-height: 2.375rem;
+  }
+
+  .laptop\:leading-\[3\.5625rem\]{
+    line-height: 3.5625rem;
+  }
+
+  .laptop\:leading-\[3\.5rem\]{
+    line-height: 3.5rem;
+  }
+
+  .laptop\:leading-\[5rem\]{
+    line-height: 5rem;
+  }
+
+  .laptop\:tracking-\[0\.00625rem\]{
+    letter-spacing: 0.00625rem;
+  }
+
+  .laptop\:tracking-\[0\.0125rem\]{
+    letter-spacing: 0.0125rem;
+  }
+
+  .laptop\:text-primaryColor{
+    color: hsla(228, 28%, 20%, 1);
+  }
+
+  .laptop\:text-white{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .laptop\:opacity-40{
+    opacity: 0.4;
+  }
+
+  .laptop\:hover\:bg-orangeColor:hover{
+    background-color: hsla(16, 96%, 51%, 1);
+  }
+
+  .laptop\:hover\:bg-white:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .laptop\:hover\:underline:hover{
+    text-decoration-line: underline;
+  }
+}
